@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    background-color: #ECE5CA;
+}
+
+main {
+    display: flex;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 90%;
+    max-width: 500px;
+}
+
+header {
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+    padding: 70px 0;
+    box-sizing: border-box;
+    margin: 0 70px;
+}
+
+.main-title, .subtitle {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    color: white;
+}
+
+.main-title {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tagline {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 20px 0 0;
+    color: white;
+}
+
+article {
+    margin: 30px 30px  30px 100px;
+    max-width: 600px;
+}
+
+article div {
+    border-bottom: 1px solid rgb(216, 210, 186);
+    padding-bottom: 20px;
+}
+
+article div:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.question, .answer {
+    color: #4B0CD1;
+}
+
+.question {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 30px 0 10px;
+}
+
+.answer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+}
+
+.answer a {
+    color: #4B0CD1;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        display: initial;
+    }
+
+    article {
+        margin: 150px 30px 0;
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header, .bg-img {
+        width: 100%;
+        max-width: none;
+    }
+
+    header {
+        padding: 20% 30% 0 20%;
+        margin: 0;
+    }
+
+    .main-title {
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    article {
+        margin: 250px 30px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    article {
+        margin: 200px 30px 0;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    header {
+        padding: 23% 30% 0 17%;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .tagline {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+
+    article {
+        margin: 150px 30px 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header {
+        padding: 20% 30% 0 17%;
+    }
+
+    .subtitle {
+        font-size: 0.7rem;
+    }
+}
+
+
+@media only screen and (max-width: 280px) {
+    .subtitle {
+        text-transform: none;
+        font-weight: 300;
+    }
+}
